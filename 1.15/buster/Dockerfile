@@ -9,7 +9,7 @@ FROM buildpack-deps:buster-scm
 # gcc for cgo
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		g++ \
-		gcc \
+#		gcc \
 		make \
 		pkg-config \
 	&& rm -rf /var/lib/apt/lists/*
